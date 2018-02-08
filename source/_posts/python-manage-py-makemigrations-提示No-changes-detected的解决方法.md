@@ -21,7 +21,7 @@ python manage.py makemigrations 提示No changes detected的解决方案一般�
 
 如果要继续修改model并生成对应sql, 可以参考如下的步骤:
 >1. 更改你的app下面的model
->2. ```python
+>2. ``` python
     python manage.py makemigrations # 生成新更改的model对应的migration file如003_auto_2018-12-30.py
     python manage.py sqlmigrate yourappname 003 # 生成新的migration file对应的sql
     (注意:这种方式会把model中设置的default值去掉. 生成sql语句后,要手动把这些sql语句中drop default的语句删除)

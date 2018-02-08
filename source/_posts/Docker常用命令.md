@@ -11,7 +11,7 @@ category: docker
 
 # 常用命令
 
-    ```shell
+    ``` bash
     docker ps                           # 显示所有running docker container, 可以看到容器的名称和id
     docker ps -a                        # 显示所有docker container，包含已停止运行的
     docker stop {container_name/id}     # 停止某个running 的容器
@@ -40,7 +40,7 @@ category: docker
 
 # 简单Dockerfile示例
 
-   ```shell
+   ``` bash
    mkdir dockerbuild
    cd dockerbuild
    touch Dockerfile  # 新建文件并输入如下Doerkfile内容:
@@ -51,7 +51,7 @@ category: docker
 
 # 根据Dockerfile build一个镜像
 
-    ```shell
+    ``` bash
     docker build -t docker-whale .  # build 一个叫 docker-whale 的image, 注意后面的 . 号, 表示 Dockerfile的路径
     docker run docker-whale         # 运行自己刚build 出来的image
     docker tag 7d9495d03763 maryatdocker/docker-whale:latest   # 为image打tag
