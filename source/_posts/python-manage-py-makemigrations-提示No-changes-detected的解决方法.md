@@ -1,8 +1,8 @@
 ---
 title: python manage.py makemigrations 提示No changes detected的解决方法
 date: 2018-02-08 13:46:50
-tags: 踩坑
-category: experience
+tags: python
+category: python
 ---
 
 python manage.py makemigrations 提示No changes detected的解决方案一般是按如下方法进行操作:

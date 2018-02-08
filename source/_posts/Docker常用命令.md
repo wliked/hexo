@@ -49,7 +49,7 @@ category: docker
        CMD /usr/games/fortune -a | cowsay
    ```
 
-# 根据Dockerfile build一个镜像:
+# 根据Dockerfile build一个镜像
 
     ```shell
     docker build -t docker-whale .  # build 一个叫 docker-whale 的image, 注意后面的 . 号, 表示 Dockerfile的路径
